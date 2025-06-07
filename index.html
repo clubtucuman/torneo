@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Liga de Fútbol</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <!-- <h1 onclick="mostrarSeccion('tabla')">Torneo Club Tucumán</h1> -->
+<h1 id="titulo">Torneo Club Tucumán</h1>
+
+<script>
+  const titulo = document.getElementById('titulo');
+  titulo.addEventListener('click', () => {
+    location.reload();
+  });
+</script>
+
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('tabla')">Tabla de Posiciones</button>
+    <button onclick="mostrarSeccion('goleadores')">Goleadores</button>
+    <button onclick="mostrarSeccion('partidos')">Próximos Partidos</button>
+  </nav>
+
+
+<section id="inicio" class="section">
+  <h2>Bienvenidos al Torneo Club Tucumán</h2>
+  <p>¡Disfrutá del mejor fútbol amateur!</p>
+  <div class="redes-sociales">
+    <a href="https://www.instagram.com/club.tucuman" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
+    <a href="#" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+  </div>
+</section>
+
+  <section id="tabla" class="section">
+    <h2 id="titulo-categoria">Tabla de Posiciones</h2>
+    <div id="botones-categorias">
+      <button class="btn-categoria" onclick="mostrarCategoria('A')">Categoría A</button>
+      <button class="btn-categoria" onclick="mostrarCategoria('B')">Categoría B</button>
+      <button class="btn-categoria" onclick="mostrarCategoria('C')">Categoría C</button>
+      <button class="btn-categoria" onclick="mostrarCategoria('+38')">+38</button>
+      <button class="btn-categoria" onclick="mostrarCategoria('+45')">+45</button>
+    </div>
+    <div id="tabla-container"></div>
+  </section>
+
+<section id="goleadores" class="section" style="display:none;">
+  <h2>¡Goleadores Destacados!</h2>
+  <p class="subtitulo">¡Los máximos artilleros de cada categoría!</p>
+  <div id="botones-categorias-goleadores">
+    <button class="btn-categoria" onclick="mostrarGoleadores('A')">Categoría A</button>
+    <button class="btn-categoria" onclick="mostrarGoleadores('B')">Categoría B</button>
+    <button class="btn-categoria" onclick="mostrarGoleadores('C')">Categoría C</button>
+    <button class="btn-categoria" onclick="mostrarGoleadores('+38')">+38</button>
+    <button class="btn-categoria" onclick="mostrarGoleadores('+45')">+45</button>
+  </div>
+  <div id="goleadores-container">
+    <!-- Aquí se cargarán las tablas de goleadores por JS o manualmente -->
+</section>
+
+  <section id="partidos" class="section" style="display:none;">
+    <h2>Próximos Partidos</h2>
+    <div id="botones-categorias-partidos">
+      <button class="btn-categoria" onclick="mostrarPartidos('A')">Categoría A</button>
+      <button class="btn-categoria" onclick="mostrarPartidos('B')">Categoría B</button>
+      <button class="btn-categoria" onclick="mostrarPartidos('C')">Categoría C</button>
+      <button class="btn-categoria" onclick="mostrarPartidos('+38')">+38</button>
+      <button class="btn-categoria" onclick="mostrarPartidos('+45')">+45</button>
+    </div>
+    <div id="partidos-container"></div>
+  </section>
+
+  <footer>
+    © 2025 La Catedral del Futbol. Todos los derechos reservados.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
