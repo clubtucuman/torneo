@@ -273,9 +273,10 @@ function volverInicio() {
 // Ejemplo de datos de partidos
 const partidosData = {
   'A': [
-    'La Noite vs La Nueva Guardia - Fecha 09/06',
-    'As de Basto vs Motorhead - Fecha 09/06',
-    'El JRS vs Jardin Espacial - Fecha 09/06'
+    // 'La Noite vs La Nueva Guardia - Fecha 09/06',
+    // 'As de Basto vs Motorhead - Fecha 09/06',
+    // 'El JRS vs Jardin Espacial - Fecha 09/06',
+    'No hay partidos de esta categoria, volve mañana!'
   ],
   'B': [
     // 'Equipo B1 vs Equipo B2 - Fecha 11/06',
@@ -290,16 +291,26 @@ const partidosData = {
     'No hay partidos de esta categoria, volve mañana!'
   ],
   '+38': [
-    // 'Equipo A1 vs Equipo A2 - Fecha 10/06',
-    // 'Equipo A3 vs Equipo A4 - Fecha 10/06',
-    // 'Equipo A5 vs Equipo A6 - Fecha 11/06'
-    'No hay partidos de esta categoria, volve mañana!'
+    'Chuker  vs Lo de Beto 38 - Fecha 11/06',
+    'El Astor Villa 45 vs Los Andes - Fecha 11/06',
+    'Bumbi 4D vs Huracanes de Bernal - Fecha 12/06',
+    'Chaco 38 vs Barreme la Veredita 38 - Fecha 12/06',
+    'Chumbimba vs Sector 7G - Fecha 12/06',
+    'Fuerte Apache vs Euka 38 - Fecha 12/06',
+    'Fiorentina vs 4 De Copas - Fecha 13/06',
+    'La Braschineta vs Centenario 38 - Fecha 13/06',
+    'Olivieri 38 vs Dos Avenidas - Fecha 13/06',
+    'Los Toledos vs El Ciclon - Fecha 13/06',
+    // 'No hay partidos de esta categoria, volve mañana!'
   ],
   '+45': [
-    // 'Equipo A1 vs Equipo A2 - Fecha 10/06',
-    // 'Equipo A3 vs Equipo A4 - Fecha 10/06',
-    // 'Equipo A5 vs Equipo A6 - Fecha 11/06'
-    'No hay partidos de esta categoria, volve mañana!'
+    'Barreme la Veredita 45 vs Centenario 45  - Fecha 10/06',
+    'Motor V 45 vs 4 De Copas 45 - Fecha 10/06',
+    'Astor Villa 45 vs Ediq - Fecha 10/06',
+    'Olivieri 45 vs Lo de Beto 45 - Fecha 10/06',
+    'Motorhead 45 vs Nueva Roma - Fecha 11/06',
+    'La Barra vs Athletic Bilbao - Fecha 11/06',
+    // 'No hay partidos de esta categoria, volve mañana!'
   ],
 };
 
