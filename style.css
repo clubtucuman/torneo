@@ -219,3 +219,7 @@ footer {
   color: #ffd700;
 }
 
+.logo {
+  max-width: 20%;
+  height: auto;
+}
